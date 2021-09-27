@@ -14,18 +14,23 @@ Create file .env on src/ folder with variables on below
 # How to setup and run by command line
 
 1. Run GO initital command line to download third modules
+
     go get
     go test
 
 2. Build app and run send email by command line
+
     go build -o main .
+    
     ./main ./SampleData/email_template.json ./SampleData/customers.csv ./SampleData/ ./SampleData/errors.csv
 
 
 # How to setup and run by Docker
 
 1. Build product to a container
+
     docker build -t sendmail .
 
 2. Run send email by command line
+
     docker run sendmail ./SampleData/email_template.json ./SampleData/customers.csv ./SampleData/ ./errors.csv
