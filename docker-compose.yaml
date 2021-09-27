@@ -1,0 +1,10 @@
+version: '3'
+services:
+  app:
+    container_name: sendmail-app
+    build: .
+    networks:
+      - mail_app
+  
+networks:
+  mail_app:
