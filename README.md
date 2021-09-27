@@ -16,6 +16,7 @@ Create file .env on src/ folder with variables on below
 1. Run GO initital command line to download third modules
 
     go get
+    
     go test
 
 2. Build app and run send email by command line
